@@ -2,67 +2,99 @@ package org.souzarodrigo.utils.models.bank;
 
 public class BankData {
 
-    private Bank Bank;
-    private String BankAgency;
-    private String BankAgencyDigit;
-    private String BankAccount;
-    private String BankAccountDigit;
-    private String Operation;
+    private Bank bank;
+    private String bankAgency;
+    private String bankAgencyDigit;
+    private String bankAccount;
+    private String bankAccountDigit;
+    private String operation;
 
-    public BankData() {
+    public BankData(Bank bank, String bankAgency, String bankAgencyDigit, String bankAccount, String bankAccountDigit, String operation) {
+        this.bank = bank;
+        this.bankAgency = bankAgency;
+        this.bankAgencyDigit = bankAgencyDigit;
+        this.bankAccount = bankAccount;
+        this.bankAccountDigit = bankAccountDigit;
+        this.operation = operation;
     }
 
     public Bank getBank() {
-        return Bank;
+        return bank;
     }
 
-    public void setBank(Bank Bank) {
-        this.Bank = Bank;
-    }
-
-    public void setBank(String Code) {
-        Bank bank = new Bank();
-        bank.setCode(Code);
-        this.Bank = bank;
+    public void setBank(Bank bank) {
+        this.bank = bank;
     }
 
     public String getBankAgency() {
-        return BankAgency;
+        return bankAgency;
     }
 
-    public void setBankAgency(String BankAgency) {
-        this.BankAgency = BankAgency;
+    public void setBankAgency(String bankAgency) {
+        this.bankAgency = bankAgency;
     }
 
     public String getBankAgencyDigit() {
-        return BankAgencyDigit;
+        return bankAgencyDigit;
     }
 
-    public void setBankAgencyDigit(String BankAgencyDigit) {
-        this.BankAgencyDigit = BankAgencyDigit;
+    public void setBankAgencyDigit(String bankAgencyDigit) {
+        this.bankAgencyDigit = bankAgencyDigit;
     }
 
     public String getBankAccount() {
-        return BankAccount;
+        return bankAccount;
     }
 
-    public void setBankAccount(String BankAccount) {
-        this.BankAccount = BankAccount;
+    public void setBankAccount(String bankAccount) {
+        this.bankAccount = bankAccount;
     }
 
     public String getBankAccountDigit() {
-        return BankAccountDigit;
+        return bankAccountDigit;
     }
 
-    public void setBankAccountDigit(String BankAccountDigit) {
-        this.BankAccountDigit = BankAccountDigit;
+    public void setBankAccountDigit(String bankAccountDigit) {
+        this.bankAccountDigit = bankAccountDigit;
     }
 
     public String getOperation() {
-        return Operation;
+        return operation;
     }
 
-    public void setOperation(String Operation) {
-        this.Operation = Operation;
+    public void setOperation(String operation) {
+        this.operation = operation;
+    }
+
+    public static class Bank {
+
+        private String code;
+        private String name;
+        private String document;
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getDocument() {
+            return document;
+        }
+
+        public void setDocument(String document) {
+            this.document = document;
+        }
+
     }
 }

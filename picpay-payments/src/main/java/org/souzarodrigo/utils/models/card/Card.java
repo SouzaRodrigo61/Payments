@@ -1,57 +1,57 @@
 package org.souzarodrigo.utils.models.card;
 
 public class Card {
-    private String Holder;
-    private String CardNumber;
-    private String ExpirationDate;
-    private String SecurityCode;
-    private String Token;
+    private String holder;
+    private String cardNumber;
+    private String expirationDate;
+    private String securityCode;
+    private String token;
 
     public Card(String holder, String cardNumber, String expirationDate, String securityCode, String token) {
-        setHolder(holder);
-        setCardNumber(cardNumber);
-        setExpirationDate(expirationDate);
-        setSecurityCode(securityCode);
-        setToken(token);
+        this.holder = holder;
+        this.cardNumber = cardNumber;
+        this.expirationDate = expirationDate;
+        this.securityCode = securityCode;
+        this.token = token;
     }
 
     public String getHolder() {
-        return Holder;
+        return holder;
     }
 
     public void setHolder(String holder) {
-        Holder = holder;
+        this.holder = holder;
     }
 
     public String getCardNumber() {
-        return CardNumber;
+        return cardNumber;
     }
 
     public void setCardNumber(String cardNumber) {
-        CardNumber = cardNumber;
+        this.cardNumber = cardNumber;
     }
 
     public String getExpirationDate() {
-        return ExpirationDate;
+        return expirationDate;
     }
 
     public void setExpirationDate(String expirationDate) {
-        ExpirationDate = expirationDate;
+        this.expirationDate = expirationDate;
     }
 
     public String getSecurityCode() {
-        return SecurityCode;
+        return securityCode;
     }
 
     public void setSecurityCode(String securityCode) {
-        SecurityCode = securityCode;
+        this.securityCode = securityCode;
     }
 
     public String getToken() {
-        return Token;
+        return token;
     }
 
     public void setToken(String token) {
-        Token = token;
+        this.token = token;
     }
 }

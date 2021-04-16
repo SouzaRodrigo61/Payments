@@ -5,14 +5,23 @@ public enum Roles {
     SHOPKEEPER("SHOPKEEPER"),
     ADMIN("ADMIN");
 
-    private String value;
+    private final String value;
 
-    Roles(final String value) {
+    Roles(String value) {
         this.value = value;
     }
 
     public String getValue() {
         return value;
+    }
+
+    public static Roles fromString(String text) {
+        for (Roles role : Roles.values()) {
+            if (role.value.equalsIgnoreCase(text)) {
+                return role;
+            }
+        }
+        return null;
     }
 
     @Override
