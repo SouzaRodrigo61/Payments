@@ -1,14 +1,14 @@
 package org.souzarodrigo.modules.security.repositories.impl;
 
-import org.souzarodrigo.modules.user.models.Admin;
-import org.souzarodrigo.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.utils.models.security.dto.UserTokenDTO;
-import org.souzarodrigo.utils.security.constants.Roles;
-import org.souzarodrigo.utils.security.services.TokenService;
-import org.souzarodrigo.modules.user.models.Customer;
-import org.souzarodrigo.modules.user.models.Shopkeeper;
+import org.souzarodrigo.core.models.Admin;
+import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
+import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.core.utils.security.constants.Roles;
+import org.souzarodrigo.core.utils.security.services.TokenService;
+import org.souzarodrigo.core.models.Customer;
+import org.souzarodrigo.core.models.Shopkeeper;
 import org.souzarodrigo.modules.security.repositories.ISecurityRepository;
-import org.souzarodrigo.utils.security.util.EncryptPassword;
+import org.souzarodrigo.core.utils.security.util.EncryptPassword;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

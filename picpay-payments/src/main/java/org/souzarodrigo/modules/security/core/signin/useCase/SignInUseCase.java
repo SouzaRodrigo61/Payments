@@ -1,8 +1,8 @@
 package org.souzarodrigo.modules.security.core.signin.useCase;
 
 import org.souzarodrigo.modules.security.repositories.ISecurityRepository;
-import org.souzarodrigo.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
+import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

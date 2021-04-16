@@ -1,12 +1,12 @@
 package org.souzarodrigo.modules.security.core.register.useCase;
 
-import org.souzarodrigo.modules.user.models.Admin;
-import org.souzarodrigo.modules.user.models.Customer;
-import org.souzarodrigo.modules.user.models.Shopkeeper;
+import org.souzarodrigo.core.models.Admin;
+import org.souzarodrigo.core.models.Customer;
+import org.souzarodrigo.core.models.Shopkeeper;
 import org.souzarodrigo.modules.security.repositories.ISecurityRepository;
-import org.souzarodrigo.utils.models.users.User;
-import org.souzarodrigo.utils.models.security.dto.UserCreatedDTO;
-import org.souzarodrigo.utils.security.util.EncryptPassword;
+import org.souzarodrigo.core.utils.models.users.User;
+import org.souzarodrigo.core.utils.models.security.dto.UserCreatedDTO;
+import org.souzarodrigo.core.utils.security.util.EncryptPassword;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

@@ -1,10 +1,7 @@
-package org.souzarodrigo.modules.user.core.update.controller;
+package org.souzarodrigo.modules.user.core.delete.controller;
 
 import org.eclipse.microprofile.jwt.JsonWebToken;
-import org.souzarodrigo.modules.user.core.update.useCase.UpdateUserUseCase;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
-import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.modules.user.core.delete.useCase.DeleteUserUseCase;
 import org.souzarodrigo.core.utils.security.constants.Roles;
 import org.souzarodrigo.core.utils.security.services.RoleService;
 
@@ -14,10 +11,10 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
 @RequestScoped
-public class UpdateController {
+public class DeleteUserController {
 
     @Inject
-    UpdateUserUseCase updateUserUseCase;
+    DeleteUserUseCase deleteUserUseCase;
 
     @Inject
     JsonWebToken jsonWebToken;
@@ -25,16 +22,15 @@ public class UpdateController {
     @Inject
     RoleService roleService;
 
-    public Response handle(SecurityContext context, UserUpdateDTO userUpdateDTO) {
+    public Response handle(SecurityContext context) {
 
         if (context.getUserPrincipal() != null) {
             Roles role = roleService.getRoles(jsonWebToken);
+
             switch (role) {
                 case SHOPKEEPER:
-                    updateUserUseCase.execute(context, userUpdateDTO, role, Shopkeeper.class);
-                    break;
                 case CUSTOMER:
-                    updateUserUseCase.execute(context, userUpdateDTO, role, Customer.class);
+                    deleteUserUseCase.execute(context, role);
                     break;
                 default:
                     return Response.status(Response.Status.FORBIDDEN).build();
@@ -44,5 +40,6 @@ public class UpdateController {
         } else {
             return Response.status(Response.Status.UNAUTHORIZED).build();
         }
+
     }
 }

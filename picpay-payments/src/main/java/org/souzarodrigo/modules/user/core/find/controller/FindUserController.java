@@ -1,10 +1,10 @@
 package org.souzarodrigo.modules.user.core.find.controller;
 
 import org.souzarodrigo.modules.user.core.find.useCase.FindUserUseCase;
-import org.souzarodrigo.modules.user.models.Admin;
-import org.souzarodrigo.modules.user.models.Customer;
-import org.souzarodrigo.modules.user.models.Shopkeeper;
-import org.souzarodrigo.utils.security.constants.Roles;
+import org.souzarodrigo.core.models.Admin;
+import org.souzarodrigo.core.models.Customer;
+import org.souzarodrigo.core.models.Shopkeeper;
+import org.souzarodrigo.core.utils.security.constants.Roles;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

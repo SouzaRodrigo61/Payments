@@ -1,9 +1,10 @@
 package org.souzarodrigo.modules.user.resource.impl;
 
+import org.souzarodrigo.modules.user.core.delete.controller.DeleteUserController;
 import org.souzarodrigo.modules.user.core.find.controller.FindUserController;
 import org.souzarodrigo.modules.user.core.update.controller.UpdateController;
 import org.souzarodrigo.modules.user.resource.IUserResource;
-import org.souzarodrigo.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
 
 import javax.inject.Inject;
 import javax.ws.rs.core.Context;
@@ -18,6 +19,9 @@ public class UserResource implements IUserResource {
     @Inject
     UpdateController updateController;
 
+    @Inject
+    DeleteUserController deleteUserController;
+
     @Override
     public Response findUser(@Context SecurityContext ctx) {
         return findUserController.handleFindUser(ctx);
@@ -30,6 +34,6 @@ public class UserResource implements IUserResource {
 
     @Override
     public Response deleteUserData(@Context SecurityContext ctx) {
-        return null;
+        return deleteUserController.handle(ctx);
     }
 }

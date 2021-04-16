@@ -1,14 +1,13 @@
 package org.souzarodrigo.modules.user.core.update.useCase;
 
-import org.souzarodrigo.modules.user.models.Customer;
-import org.souzarodrigo.modules.user.models.Shopkeeper;
+import org.souzarodrigo.core.models.Customer;
+import org.souzarodrigo.core.models.Shopkeeper;
 import org.souzarodrigo.modules.user.repository.IUserRepository;
-import org.souzarodrigo.utils.models.users.dto.UserUpdateDTO;
-import org.souzarodrigo.utils.security.constants.Roles;
+import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.core.utils.security.constants.Roles;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
 @RequestScoped

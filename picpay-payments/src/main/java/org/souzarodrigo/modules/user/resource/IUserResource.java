@@ -9,7 +9,7 @@ import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.souzarodrigo.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
 
 import javax.annotation.Priority;
 import javax.annotation.security.RolesAllowed;
@@ -41,29 +41,29 @@ public interface IUserResource {
     @RolesAllowed({"ADMIN", "CUSTOMER", "SHOPKEEPER"})
     @Operation(summary = "Get all data about user logged", description = "Returns all user data by function ")
     @APIResponses(
-            value = {
-                    @APIResponse(
-                            responseCode = "200",
-                            description = "Response OK",
-                            content = @Content(mediaType = MediaType.APPLICATION_JSON)
-                    ),
-                    @APIResponse(
-                            responseCode = "400",
-                            description = "Error in application"
-                    ),
-                    @APIResponse(
-                            responseCode = "401",
-                            description = "Unauthorized"
-                    ),
-                    @APIResponse(
-                            responseCode = "403",
-                            description = "Forbidden"
-                    ),
-                    @APIResponse(
-                            responseCode = "500",
-                            description = "The server encountered a situation that it does not know how to deal with."
-                    )
-            }
+        value = {
+            @APIResponse(
+                    responseCode = "200",
+                    description = "Response OK",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON)
+            ),
+            @APIResponse(
+                    responseCode = "400",
+                    description = "Error in application"
+            ),
+            @APIResponse(
+                    responseCode = "401",
+                    description = "Unauthorized"
+            ),
+            @APIResponse(
+                    responseCode = "403",
+                    description = "Forbidden"
+            ),
+            @APIResponse(
+                    responseCode = "500",
+                    description = "The server encountered a situation that it does not know how to deal with."
+            )
+        }
     )
     Response findUser(@Context SecurityContext ctx);
 
@@ -72,29 +72,29 @@ public interface IUserResource {
     @RolesAllowed({"CUSTOMER", "SHOPKEEPER"})
     @Operation(summary = "Update data of user logged", description = "Updated Data ")
     @APIResponses(
-            value = {
-                    @APIResponse(
-                            responseCode = "200",
-                            description = "Response OK",
-                            content = @Content(mediaType = MediaType.APPLICATION_JSON)
-                    ),
-                    @APIResponse(
-                            responseCode = "400",
-                            description = "Error in application"
-                    ),
-                    @APIResponse(
-                            responseCode = "401",
-                            description = "Unauthorized"
-                    ),
-                    @APIResponse(
-                            responseCode = "403",
-                            description = "Forbidden"
-                    ),
-                    @APIResponse(
-                            responseCode = "500",
-                            description = "The server encountered a situation that it does not know how to deal with."
-                    )
-            }
+        value = {
+            @APIResponse(
+                    responseCode = "200",
+                    description = "Response OK",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON)
+            ),
+            @APIResponse(
+                    responseCode = "400",
+                    description = "Error in application"
+            ),
+            @APIResponse(
+                    responseCode = "401",
+                    description = "Unauthorized"
+            ),
+            @APIResponse(
+                    responseCode = "403",
+                    description = "Forbidden"
+            ),
+            @APIResponse(
+                    responseCode = "500",
+                    description = "The server encountered a situation that it does not know how to deal with."
+            )
+        }
     )
     Response updateUserData(@Context SecurityContext ctx, UserUpdateDTO userUpdateDTO);
 
@@ -103,29 +103,29 @@ public interface IUserResource {
     @RolesAllowed({"ADMIN", "CUSTOMER", "SHOPKEEPER"})
     @Operation(summary = "Deleted data of user logged", description = "Deleted Data ")
     @APIResponses(
-            value = {
-                    @APIResponse(
-                            responseCode = "200",
-                            description = "Response OK",
-                            content = @Content(mediaType = MediaType.APPLICATION_JSON)
-                    ),
-                    @APIResponse(
-                            responseCode = "400",
-                            description = "Error in application"
-                    ),
-                    @APIResponse(
-                            responseCode = "401",
-                            description = "Unauthorized"
-                    ),
-                    @APIResponse(
-                            responseCode = "403",
-                            description = "Forbidden"
-                    ),
-                    @APIResponse(
-                            responseCode = "500",
-                            description = "The server encountered a situation that it does not know how to deal with."
-                    )
-            }
+        value = {
+            @APIResponse(
+                    responseCode = "200",
+                    description = "Response OK",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON)
+            ),
+            @APIResponse(
+                    responseCode = "400",
+                    description = "Error in application"
+            ),
+            @APIResponse(
+                    responseCode = "401",
+                    description = "Unauthorized"
+            ),
+            @APIResponse(
+                    responseCode = "403",
+                    description = "Forbidden"
+            ),
+            @APIResponse(
+                    responseCode = "500",
+                    description = "The server encountered a situation that it does not know how to deal with."
+            )
+        }
     )
     Response deleteUserData(@Context SecurityContext ctx);
 }

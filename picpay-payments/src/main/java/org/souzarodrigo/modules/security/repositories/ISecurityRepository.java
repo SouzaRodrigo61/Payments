@@ -1,12 +1,12 @@
 package org.souzarodrigo.modules.security.repositories;
 
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
-import org.souzarodrigo.modules.user.models.Admin;
-import org.souzarodrigo.utils.models.users.User;
-import org.souzarodrigo.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.utils.models.security.dto.UserTokenDTO;
-import org.souzarodrigo.modules.user.models.Customer;
-import org.souzarodrigo.modules.user.models.Shopkeeper;
+import org.souzarodrigo.core.models.Admin;
+import org.souzarodrigo.core.utils.models.users.User;
+import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
+import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.core.models.Customer;
+import org.souzarodrigo.core.models.Shopkeeper;
 
 import javax.transaction.Transactional;
 

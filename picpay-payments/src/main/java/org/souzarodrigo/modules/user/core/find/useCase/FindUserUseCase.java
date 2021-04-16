@@ -1,8 +1,7 @@
 package org.souzarodrigo.modules.user.core.find.useCase;
 
-import org.souzarodrigo.modules.security.repositories.ISecurityRepository;
 import org.souzarodrigo.modules.user.repository.IUserRepository;
-import org.souzarodrigo.utils.security.constants.Roles;
+import org.souzarodrigo.core.utils.security.constants.Roles;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
