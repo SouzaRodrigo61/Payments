@@ -1,6 +1,5 @@
 package org.souzarodrigo.modules.user.resource;
 
-
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
@@ -9,7 +8,7 @@ import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.global.shared.users.dto.UserUpdateDTO;
 
 import javax.annotation.Priority;
 import javax.annotation.security.RolesAllowed;

@@ -1,10 +1,10 @@
 package org.souzarodrigo.modules.security.core.register.controller;
 
 import org.souzarodrigo.modules.security.core.register.useCase.RegisterUseCase;
-import org.souzarodrigo.core.models.Admin;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
-import org.souzarodrigo.core.utils.models.security.dto.UserCreatedDTO;
+import org.souzarodrigo.global.models.Admin;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
+import org.souzarodrigo.global.shared.security.dto.UserCreatedDTO;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

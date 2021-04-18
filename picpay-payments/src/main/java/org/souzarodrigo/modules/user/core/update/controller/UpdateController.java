@@ -2,9 +2,9 @@ package org.souzarodrigo.modules.user.core.update.controller;
 
 import org.eclipse.microprofile.jwt.JsonWebToken;
 import org.souzarodrigo.modules.user.core.update.useCase.UpdateUserUseCase;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
-import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
+import org.souzarodrigo.global.shared.users.dto.UserUpdateDTO;
 import org.souzarodrigo.core.utils.security.constants.Roles;
 import org.souzarodrigo.core.utils.security.services.RoleService;
 

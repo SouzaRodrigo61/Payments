@@ -1,9 +1,9 @@
 package org.souzarodrigo.modules.user.core.update.useCase;
 
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
 import org.souzarodrigo.modules.user.repository.IUserRepository;
-import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.global.shared.users.dto.UserUpdateDTO;
 import org.souzarodrigo.core.utils.security.constants.Roles;
 
 import javax.enterprise.context.RequestScoped;

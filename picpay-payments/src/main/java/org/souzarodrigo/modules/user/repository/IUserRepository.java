@@ -1,10 +1,10 @@
 package org.souzarodrigo.modules.user.repository;
 
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
-import org.souzarodrigo.core.models.Admin;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
-import org.souzarodrigo.core.utils.models.users.User;
+import org.souzarodrigo.global.models.Admin;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
+import org.souzarodrigo.global.shared.users.User;
 
 public interface IUserRepository extends PanacheMongoRepository<User> {
 

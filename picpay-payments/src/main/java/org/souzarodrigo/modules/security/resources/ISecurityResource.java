@@ -4,9 +4,9 @@ import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
 import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.souzarodrigo.core.utils.models.security.dto.UserCreatedDTO;
-import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.global.shared.security.dto.UserCreatedDTO;
+import org.souzarodrigo.global.shared.security.dto.UserLoginDTO;
+import org.souzarodrigo.global.shared.security.dto.UserTokenDTO;
 
 import javax.annotation.security.PermitAll;
 import javax.enterprise.context.ApplicationScoped;

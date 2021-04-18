@@ -2,9 +2,9 @@ package org.souzarodrigo.modules.security.resources.impl;
 
 import org.souzarodrigo.modules.security.core.register.controller.RegisterController;
 import org.souzarodrigo.modules.security.core.signin.controller.SignInController;
-import org.souzarodrigo.core.utils.models.security.dto.UserCreatedDTO;
-import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.global.shared.security.dto.UserCreatedDTO;
+import org.souzarodrigo.global.shared.security.dto.UserLoginDTO;
+import org.souzarodrigo.global.shared.security.dto.UserTokenDTO;
 import org.souzarodrigo.modules.security.resources.ISecurityResource;
 
 import javax.inject.Inject;

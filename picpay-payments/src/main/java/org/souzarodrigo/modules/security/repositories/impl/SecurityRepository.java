@@ -1,12 +1,12 @@
 package org.souzarodrigo.modules.security.repositories.impl;
 
-import org.souzarodrigo.core.models.Admin;
-import org.souzarodrigo.core.utils.models.security.dto.UserLoginDTO;
-import org.souzarodrigo.core.utils.models.security.dto.UserTokenDTO;
+import org.souzarodrigo.global.models.Admin;
+import org.souzarodrigo.global.shared.security.dto.UserLoginDTO;
+import org.souzarodrigo.global.shared.security.dto.UserTokenDTO;
 import org.souzarodrigo.core.utils.security.constants.Roles;
 import org.souzarodrigo.core.utils.security.services.TokenService;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
 import org.souzarodrigo.modules.security.repositories.ISecurityRepository;
 import org.souzarodrigo.core.utils.security.util.EncryptPassword;
 

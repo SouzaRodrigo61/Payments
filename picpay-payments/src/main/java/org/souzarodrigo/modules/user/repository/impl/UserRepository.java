@@ -1,8 +1,8 @@
 package org.souzarodrigo.modules.user.repository.impl;
 
-import org.souzarodrigo.core.models.Admin;
-import org.souzarodrigo.core.models.Customer;
-import org.souzarodrigo.core.models.Shopkeeper;
+import org.souzarodrigo.global.models.Admin;
+import org.souzarodrigo.global.models.Customer;
+import org.souzarodrigo.global.models.Shopkeeper;
 import org.souzarodrigo.modules.user.repository.IUserRepository;
 
 import javax.enterprise.context.RequestScoped;

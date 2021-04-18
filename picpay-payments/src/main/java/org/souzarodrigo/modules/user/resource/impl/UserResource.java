@@ -4,7 +4,7 @@ import org.souzarodrigo.modules.user.core.delete.controller.DeleteUserController
 import org.souzarodrigo.modules.user.core.find.controller.FindUserController;
 import org.souzarodrigo.modules.user.core.update.controller.UpdateController;
 import org.souzarodrigo.modules.user.resource.IUserResource;
-import org.souzarodrigo.core.utils.models.users.dto.UserUpdateDTO;
+import org.souzarodrigo.global.shared.users.dto.UserUpdateDTO;
 
 import javax.inject.Inject;
 import javax.ws.rs.core.Context;
